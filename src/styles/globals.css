@@ -21,7 +21,7 @@ a {
   }
   body {
     color: black;
-    background: white;
+    background-color: rgb(2, 175, 243, 0.05);
   }
 }
 
@@ -34,4 +34,11 @@ a {
     rgba(255, 255, 255, 1) 50%,
     rgba(255, 255, 255, 1) 100%
   );
+}
+.swiper-pagination-bullet {
+  background-color: white !important;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #02aff3 !important;
 }

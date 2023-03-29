@@ -1,8 +1,8 @@
-import { agencies } from '@/constants/agencies'
+import { invoices } from '@/constants/invoices'
 import React from 'react'
 import Header from '../Header'
 
-const Agencies = () => {
+const Invoices = () => {
   return (
     <div className="lg:pl-80 flex flex-col flex-1">
       <div className=" flex max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 ">
@@ -12,25 +12,8 @@ const Agencies = () => {
             <div className="flex flex-col mt-4 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                 <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-                  <Header
-                    title="Agencies List"
-                    description="Pickup an agency to manage Baak Slots"
-                  />
-                  <div className="my-5">
-                    <p>Your hiring Agency</p>
-                    <div className="w-full space-y-2 my-2  bg-white p-3 shadow-sm rounded-main border border-secondary ">
-                      <div>
-                        Agency Name :<b>Akerman</b>
-                      </div>
-                      <p>
-                        Email :<b>example@gmail.com</b>
-                      </p>
-                      <p>
-                        Products:<b>20</b>
-                      </p>
-                    </div>
-                  </div>
-                  All Agencies
+                  <Header title="Invoice List" description="" />
+
                   <div className="shadow my-5 overflow-hidden border-b border-gray-200 sm:rounded-lg">
                     <table className="min-w-full divide-y divide-gray-200">
                       <thead className="bg-white">
@@ -52,13 +35,13 @@ const Agencies = () => {
                             scope="col"
                             className="px-6 py-3 text-left text-xs font-medium  tracking-wider"
                           >
-                            Email
+                            Booked Slots
                           </th>
                           <th
                             scope="col"
                             className="px-6 py-3 text-center text-xs font-medium  tracking-wider"
                           >
-                            Products
+                            Total Amount
                           </th>
                           <th
                             scope="col"
@@ -72,30 +55,52 @@ const Agencies = () => {
                           >
                             Actions
                           </th>
+                          <th
+                            scope="col"
+                            className="px-6 py-3 text-right text-xs font-medium  tracking-wider"
+                          ></th>
                         </tr>
                       </thead>
                       <tbody className="bg-white divide-y divide-gray-200">
-                        {agencies.map((agency) => (
-                          <tr key={agency.id}>
+                        {invoices.map((invoice) => (
+                          <tr key={invoice.id}>
                             <td className="px-6 py-4 whitespace-nowrap text-sm font-normal text-black">
-                              {agency.id}
+                              {invoice.id}
                             </td>
                             <td className="px-6 py-4 whitespace-nowrap text-sm font-normal text-black">
-                              {agency.agencyName}
+                              {invoice.name}
                             </td>
                             <td className="px-6 py-4 whitespace-nowrap text-sm font-normal text-black">
-                              {agency.email}
+                              {invoice.slots}
                             </td>
                             <td className="px-6 py-4 whitespace-nowrap text-center text-sm font-normal text-black">
-                              {agency.products}
+                              {invoice.totalAmount}
                             </td>
-                            <td className="px-6 py-4 whitespace-nowrap text-center text-sm font-normal text-black">
-                              {agency.bookedSlots}
+                            <td className="px-6 py-4 text-center whitespace-nowrap font-normal text-sm text-black">
+                              {invoice.paid ? invoice.bank : '------'}
+                            </td>
+
+                            <td className="px-6 py-4 whitespace-nowrap font-normal text-right text-sm text-black">
+                              {invoice.paid ? (
+                                <button className="bg-secondary w-20 rounded-md px-2 py-1 text-white">
+                                  Paid
+                                </button>
+                              ) : (
+                                <button className="bg-primary w-20 rounded-md px-2 py-1 text-white">
+                                  Unpaid
+                                </button>
+                              )}
                             </td>
                             <td className="px-6 py-4 whitespace-nowrap font-normal text-right text-sm text-black">
-                              <button className="bg-primary rounded-md px-2 py-1 text-white">
-                                Book
-                              </button>
+                              {invoice.paid ? (
+                                <button className="bg-secondary rounded-md px-2 py-1 text-white">
+                                  Pay Now
+                                </button>
+                              ) : (
+                                <button className="bg-primary rounded-md px-2 py-1 text-white">
+                                  Pay Now
+                                </button>
+                              )}
                             </td>
                           </tr>
                         ))}
@@ -112,4 +117,4 @@ const Agencies = () => {
   )
 }
 
-export default Agencies
+export default Invoices

@@ -16,7 +16,14 @@ export const JustifyEnd = tw.div`flex justify-end items-center`
 export const Shrink_0 = tw.div`shrink-0`
 export const Line = tw.div`border-b-[0.1px] border-secondary `
 export const InputLarge = tw.input`block w-full m-0 px-3 py-3 lg:text-[14px] leading-5 font-medium   placeholder-secondaryLight bg-transparent border border-secondary text-white hover:border-red-100 focus:border-red-200  rounded-main focus:outline-none focus:bg-[#191C1F]  focus:ring-white  sm:text-sm transition-all ease-in duration-300`
-export const Input = tw.input`block w-full m-0 px-3 py-2 leading-5 font-medium   placeholder-secondaryLight bg-transparent border border-secondary text-white hover:border-red-100 focus:border-red-200  rounded-main focus:outline-none focus:bg-[#191C1F]  focus:ring-white  sm:text-sm transition-all ease-in duration-300`
+export const Label = tw.label`block text-sm font-medium leading-6 text-gray-900`
+export const Input = tw.input`block w-full rounded-main border border-secondary py-3 px-2 text-gray-900`
+export const TextAreaInput = tw.textarea`block w-full rounded-main border border-secondary py-3 px-2 text-gray-900`
+export const InputGrid = tw.div`mt-10 grid grid-cols-1 gap-y-8 gap-x-6 sm:grid-cols-6`
+export const SubmitButtonLight = tw.button`w-full my-4 py-3 flex justify-center px-4 border border-primary rounded-main shadow-sm text-sm font-medium text-primary bg-white  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`
+export const SubmitButton = tw.button`w-full my-4 py-3 flex justify-center px-4 border border-primary rounded-main shadow-sm text-sm font-medium text-white bg-primary  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`
+export const SelectInput = tw.select`block w-full rounded-main border border-secondary bg-white py-3 px-2 text-gray-900`
+
 export const TextArea = tw.textarea`block w-full px-3 py-2 leading-5  placeholder-secondaryLight bg-transparent border border-secondary text-white hover:border-red-100 focus:border-red-200  rounded-main focus:outline-none focus:bg-[#191C1F]  focus:ring-white  sm:text-sm transition-all ease-in duration-75`
 export const Heading = tw.h1`text-2xl font-bold `
 export const Space = tw.div`h-2`

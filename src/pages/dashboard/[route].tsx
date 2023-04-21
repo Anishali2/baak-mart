@@ -4,6 +4,7 @@ import { XMarkIcon as XIcon } from '@heroicons/react/20/solid'
 import DashboardSidebar from '@/components/DashboardSidebar'
 import ProfileDropdown from '@/components/Dropdown/Profile'
 import Dashboard from '@/components/Dashboard'
+import SideBarMini from '@/components/DashboardSidebar/SideBarMini'
 
 export default function Example() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
@@ -18,7 +19,7 @@ export default function Example() {
         <body class="h-full">
         ```
       */}
-      <div className=" ">
+      <div className="flex lg:block  ">
         <Transition.Root show={sidebarOpen} as={Fragment}>
           <Dialog
             as="div"
@@ -45,7 +46,7 @@ export default function Example() {
               leaveFrom="translate-x-0"
               leaveTo="-translate-x-full"
             >
-              <div className="relative flex-1 flex flex-col max-w-xs w-full pt-5 pb-4 bg-cyan-700">
+              <div className="relative flex-1 flex flex-col max-w-xs w-full pt-5 pb-4 bg-white">
                 <Transition.Child
                   as={Fragment}
                   enter="ease-in-out duration-300"
@@ -72,8 +73,8 @@ export default function Example() {
                 <div className="flex-shrink-0 flex items-center px-4">
                   <img
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/easywire-logo-cyan-300-mark-white-text.svg"
-                    alt="Easywire logo"
+                    src="/logo-big.png"
+                    alt="Baak_Mart"
                   />
                 </div>
                 <nav
@@ -90,7 +91,6 @@ export default function Example() {
           </Dialog>
         </Transition.Root>
 
-        {/* Static sidebar for desktop */}
         <div className="hidden lg:flex lg:w-80 lg:flex-col lg:fixed lg:inset-y-0">
           {/* Sidebar component, swap this element with another sidebar if you like */}
           <div className="flex flex-col flex-grow bg-white border pt-5 pb-4 overflow-y-auto m-5 shadow-md rounded-main">
@@ -119,8 +119,43 @@ export default function Example() {
             </nav>
           </div>
         </div>
-
-        <Dashboard />
+        {/* <aside
+          onClick={() => setSidebarOpen(true)}
+          className="block relative lg:hidden w-10 float-left"
+          aria-label="Sidebar"
+        >
+          <div className="overflow-y-auto absolute bg-transparent cursor-pointer  h-10 w-10 ">
+            <Bars3BottomLeftIcon className="text-primary h-5 w-5 mt-2 ml-1.5" />
+          </div>
+        </aside> */}
+        <div className="flex  lg:hidden w-30 ">
+          <div className="flex flex-col flex-grow bg-white border pt-5 pb-4 overflow-y-auto m-5 shadow-md rounded-main">
+            <div className="flex items-center justify-center flex-shrink-0 px-4 mb-5">
+              <img
+                className="h-6 w-auto b"
+                src="https://cdn.discordapp.com/attachments/1089803685036560425/1090592133909577738/image.png"
+                alt="Baak_Mart"
+              />
+            </div>
+            <SideBarMini />
+          </div>
+        </div>
+        <div className="lg:pl-80 flex flex-col flex-1">
+          <div className=" flex max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 ">
+            <main className="flex-1 pb-8">
+              <div className="mt-8">
+                {/* Activity table (small breakpoint and up) */}
+                <div className="flex flex-col mt-4 max-w-6xl mx-auto px-4 sm:px-2 lg:px-8">
+                  <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                    <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                      <Dashboard />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
       </div>
     </>
   )

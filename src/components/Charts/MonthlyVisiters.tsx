@@ -8,12 +8,12 @@ export default function MonthlyVisitors() {
   const buttons = ['today', 'weekly', 'monthly']
   return (
     <Fragment>
-      <div className="flex bg-white shadow-md rounded-main flex-col mt-4 max-w-[1090px] mx-auto px-4 sm:px-6 lg:px-8">
-        <dt className="text-2xl py-3 font-medium text-black truncate">
+      <div className="flex bg-white shadow-md rounded-main flex-col my-4">
+        <dt className="text-2xl ml-5 py-3 font-medium text-black truncate">
           Monthly Visitors
         </dt>
         <hr />
-        <div className="flex my-2 space-x-2">
+        <div className="flex  ml-5  my-2 space-x-2">
           {buttons.map((v, i) => (
             <button
               onClick={() => setChart(v)}
@@ -27,7 +27,7 @@ export default function MonthlyVisitors() {
           ))}
         </div>
         <LineChart
-          width={900}
+          width={800}
           height={300}
           //   data={data}
           data={chart == 'today' ? today : chart == 'weekly' ? weekly : monthly}

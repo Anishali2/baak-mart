@@ -6,7 +6,7 @@ interface IHeader {
 const Header = ({ title, description }: IHeader) => {
   return (
     <div>
-      <p className="pt-3 text-lg font-bold ">{title}</p>
+      <p className="pt-3 text-xl font-semibold ">{title}</p>
       <p className="py-1 text-sm text-secondary font-medium tracking-wider">
         {description}
       </p>

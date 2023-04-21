@@ -63,13 +63,7 @@ export const navigation = [
     icon: '/dashboard-icons/help',
     current: false
   },
-  {
-    name: 'Feedback',
-    route: 'feedback',
-    href: '#',
-    icon: '/dashboard-icons/feedback',
-    current: false
-  },
+
   {
     name: 'Logout',
     route: 'logout',

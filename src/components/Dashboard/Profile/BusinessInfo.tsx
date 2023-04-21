@@ -8,43 +8,43 @@ const BusinessInfo = () => {
         <div className="sm:col-span-3">
           <Label htmlFor="first-name">Family name</Label>
           <div className="mt-2">
-            <Input type="text" />
+            <Input placeholder="Family name" type="text" />
           </div>
         </div>
         <div className="sm:col-span-3">
           <Label htmlFor="first-name">First name</Label>
           <div className="mt-2">
-            <Input type="text" />
+            <Input type="text" placeholder="First name" />
           </div>
         </div>
         <div className="sm:col-span-3">
           <Label htmlFor="first-name">Email</Label>
           <div className="mt-2">
-            <Input type="text" />
+            <Input type="text" placeholder="example@mail.com" />
           </div>
         </div>
         <div className="sm:col-span-3">
           <Label htmlFor="first-name">Confirm Email</Label>
           <div className="mt-2">
-            <Input type="text" />
+            <Input type="text" placeholder="confirm email" />
           </div>
         </div>
         <div className="sm:col-span-3">
           <Label htmlFor="first-name">Password</Label>
           <div className="mt-2">
-            <Input type="text" />
+            <Input type="text" placeholder="*******" />
           </div>
         </div>
         <div className="sm:col-span-3">
           <Label htmlFor="first-name">Confirm Password</Label>
           <div className="mt-2">
-            <Input type="text" />
+            <Input type="text" placeholder="confirm password" />
           </div>
         </div>
         <div className="sm:col-span-3">
           <Label htmlFor="first-name">Business name</Label>
           <div className="mt-2">
-            <Input type="text" />
+            <Input type="text" placeholder="business name " />
           </div>
         </div>
         <div className="sm:col-span-3">
@@ -68,13 +68,13 @@ const BusinessInfo = () => {
         <div className="sm:col-span-3">
           <Label htmlFor="first-name">Business Registration Number</Label>
           <div className="mt-2">
-            <Input type="text" />
+            <Input type="text" placeholder="---- ----" />
           </div>
         </div>
         <div className="sm:col-span-3">
           <Label htmlFor="first-name">VAT Number</Label>
           <div className="mt-2">
-            <Input type="text" />
+            <Input type="text" placeholder="---- ----" />
           </div>
         </div>
         <div className="col-span-full">

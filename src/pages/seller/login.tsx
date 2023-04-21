@@ -96,12 +96,13 @@ export default function SellerLogin() {
                     </Link>
                   </div>
                 </div>
-
-                <div>
-                  <button className="w-full py-4 flex justify-center px-4 border border-transparent rounded-main shadow-sm text-sm font-medium text-white bg-primary  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                    Login
-                  </button>
-                </div>
+                <Link href={'/dashboard/dashboard'}>
+                  <div>
+                    <button className="w-full py-4 flex justify-center px-4 border border-transparent rounded-main shadow-sm text-sm font-medium text-white bg-primary  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                      Login
+                    </button>
+                  </div>
+                </Link>
 
                 <div className="text-black flex justify-center">
                   Don't have an account?

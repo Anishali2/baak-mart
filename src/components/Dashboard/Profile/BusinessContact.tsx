@@ -1,10 +1,10 @@
-import { Input, Label } from '@/components/twin'
+import { Input, InputGrid, Label } from '@/components/twin'
 import React from 'react'
 
 const BusinessContact = () => {
   return (
     <div>
-      <div className="mt-10 grid grid-cols-1 gap-y-8 gap-x-6 sm:grid-cols-6">
+      <InputGrid>
         <div className="col-span-full">
           <Label htmlFor="about">Business Address</Label>
           <div className="mt-2">
@@ -153,7 +153,7 @@ const BusinessContact = () => {
             In order to help you with booking and managing your Baak Slots?
           </p>
         </div>
-      </div>
+      </InputGrid>
       <fieldset>
         <div className="my-6 flex space-x-6">
           <div className="flex items-center gap-x-3">

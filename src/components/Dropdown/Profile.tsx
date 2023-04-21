@@ -10,7 +10,7 @@ const ProfileDropdown = () => {
         <div>
           <Menu.Button className="max-w-xs bg-white rounded-full flex items-center text-sm focus:outline-none focus:ring-transparent lg:p-2 lg:rounded-md">
             <img
-              className="h-12 w-12 rounded-full"
+              className="h-7 w-7 lg:h-12 lg:w-12 rounded-full"
               src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
               alt=""
             />

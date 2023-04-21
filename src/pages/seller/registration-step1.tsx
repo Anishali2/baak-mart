@@ -1,3 +1,4 @@
+import { InputGrid } from '@/components/twin'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -38,7 +39,7 @@ const Registration = () => {
             Seller Registration Form
           </p>
 
-          <div className="mt-10 grid grid-cols-1 gap-y-8 gap-x-6 sm:grid-cols-6">
+           <InputGrid>
             <div className="sm:col-span-3">
               <Label htmlFor="first-name">Family name</Label>
               <div className="mt-2">
@@ -137,7 +138,7 @@ const Registration = () => {
               </select>
             </div>
           </div> */}
-          </div>
+          </InputGrid>
           <p className="my-2 text-sm leading-6 text-gray-600">
             At least 2 lower case characters
           </p>
@@ -156,7 +157,7 @@ const Registration = () => {
           <p className="my-2 text-sm leading-6 text-gray-600">
             Significantly different from your previous password
           </p>
-          <div className="mt-10 grid grid-cols-1 gap-y-8 gap-x-6 sm:grid-cols-6">
+          <InputGrid>
             <div className="sm:col-span-3">
               <Label htmlFor="first-name">Business name</Label>
               <div className="mt-2">
@@ -212,8 +213,11 @@ const Registration = () => {
                 />
               </div>
             </div>
-          </div>
-          <button onClick={() => router.push('/seller/registration-step2')} className="w-full my-4 py-3 flex justify-center px-4 border border-transparent rounded-main shadow-sm text-sm font-medium text-white bg-primary  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+          </InputGrid>
+          <button
+            onClick={() => router.push('/seller/registration-step2')}
+            className="w-full my-4 py-3 flex justify-center px-4 border border-transparent rounded-main shadow-sm text-sm font-medium text-white bg-primary  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          >
             Next
           </button>
         </div>

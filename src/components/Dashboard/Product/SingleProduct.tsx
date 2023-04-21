@@ -8,15 +8,7 @@ const SingleProduct = ({ product }: { product: any }) => {
   return (
     <div className="bg-white my-2 border border-secondary py-2 rounded-main px-2">
       <li key={product.id} className="flex ">
-        {/* <div className="h-fit border rounded-main">
-                  <img
-                    src={product.imageSrc}
-                    alt={product.imageAlt}
-                    className="w-24 h-24 rounded-md sm:w-40 sm:h-40"
-                  />
-                </div> */}
         <ProductImagesCarousel />
-
         <div className="ml-4 flex-1 flex flex-col sm:ml-6">
           <div>
             <div className="flex justify-between">
@@ -65,47 +57,6 @@ const SingleProduct = ({ product }: { product: any }) => {
       {isOpen && (
         <div className=" overflow-hidden border-b border-gray-200 sm:rounded-lg">
           <table className="min-w-full divide-y divide-gray-200">
-            {/* <thead className="bg-white">
-              <tr>
-                <th
-                  scope="col"
-                  className="px-6 py-3 text-left text-xs font-medium tracking-wider"
-                >
-                  #
-                </th>
-                <th
-                  scope="col"
-                  className="px-6 py-3 text-left text-xs font-medium tracking-wider"
-                >
-                  Agency name
-                </th>
-
-                <th
-                  scope="col"
-                  className="px-6 py-3 text-left text-xs font-medium  tracking-wider"
-                >
-                  Email
-                </th>
-                <th
-                  scope="col"
-                  className="px-6 py-3 text-center text-xs font-medium  tracking-wider"
-                >
-                  Products
-                </th>
-                <th
-                  scope="col"
-                  className="px-6 py-3 text-center text-xs font-medium  tracking-wider"
-                >
-                  Booked slots
-                </th>
-                <th
-                  scope="col"
-                  className="px-6 py-3 text-right text-xs font-medium  tracking-wider"
-                >
-                  Actions
-                </th>
-              </tr>
-            </thead> */}
             <tbody className="bg-white divide-y divide-gray-200">
               {agencies.map((agency) => (
                 <tr key={agency.agencyName}>

@@ -11,14 +11,6 @@ export default function Example() {
 
   return (
     <>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-gray-100">
-        <body class="h-full">
-        ```
-      */}
       <div className="flex lg:block  ">
         <Transition.Root show={sidebarOpen} as={Fragment}>
           <Dialog
@@ -86,13 +78,11 @@ export default function Example() {
               </div>
             </Transition.Child>
             <div className="flex-shrink-0 w-14" aria-hidden="true">
-              {/* Dummy element to force sidebar to shrink to fit close icon */}
             </div>
           </Dialog>
         </Transition.Root>
 
         <div className="hidden lg:flex lg:w-80 lg:flex-col lg:fixed lg:inset-y-0">
-          {/* Sidebar component, swap this element with another sidebar if you like */}
           <div className="flex flex-col flex-grow bg-white border pt-5 pb-4 overflow-y-auto m-5 shadow-md rounded-main">
             <div className="flex items-center justify-center flex-shrink-0 px-4">
               <img
@@ -119,15 +109,7 @@ export default function Example() {
             </nav>
           </div>
         </div>
-        {/* <aside
-          onClick={() => setSidebarOpen(true)}
-          className="block relative lg:hidden w-10 float-left"
-          aria-label="Sidebar"
-        >
-          <div className="overflow-y-auto absolute bg-transparent cursor-pointer  h-10 w-10 ">
-            <Bars3BottomLeftIcon className="text-primary h-5 w-5 mt-2 ml-1.5" />
-          </div>
-        </aside> */}
+
         <div className="flex  lg:hidden w-30 ">
           <div className="flex flex-col flex-grow bg-white border pt-5 pb-4 overflow-y-auto m-5 shadow-md rounded-main">
             <div className="flex items-center justify-center flex-shrink-0 px-4 mb-5">

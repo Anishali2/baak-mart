@@ -33,7 +33,6 @@ const AddProduct = () => {
         </div>
         {/* Product Size */}
         <div className="sm:col-span-3">
-          {/* // TODO select dropdown */}
           <Label htmlFor="country">Product size</Label>
           <div className="mt-2">
             <SelectInput

@@ -87,7 +87,7 @@ export default function SellerLogin() {
                 <div className="flex items-center justify-between ">
                   <div></div>
 
-                  <div className="text-sm">
+                  <div className="text-sm my-2">
                     <Link
                       href={'/seller/forget-password'}
                       className="font-medium text-primary hover:underline"

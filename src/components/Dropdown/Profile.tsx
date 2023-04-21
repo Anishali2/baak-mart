@@ -1,4 +1,4 @@
-import { classNames } from '@/helpers/classnames'
+import { classNames } from '@/helpers/classNames'
 import { Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import React, { Fragment } from 'react'

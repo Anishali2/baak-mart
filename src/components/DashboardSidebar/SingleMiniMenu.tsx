@@ -1,4 +1,4 @@
-import { classNames } from '@/helpers/classnames'
+import { classNames } from '@/helpers/classNames'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'

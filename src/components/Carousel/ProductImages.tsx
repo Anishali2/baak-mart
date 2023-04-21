@@ -9,7 +9,7 @@ import 'swiper/css/pagination'
 // import required modules
 import { Pagination } from 'swiper'
 
-export default function App() {
+export default function ProductCarouselImages() {
   const pagination = {
     clickable: true,
     renderBullet: function (_index: any, className: string) {
